@@ -7,6 +7,8 @@
   "files": [
     "app/bucketlist-create-tasks.ts",
     "app/bucketlist-classes-interfaces.ts",
-    "app/bucketlist-people.ts"
+    "app/bucketlist-people.ts",
+    "app/bucketlist-listing-functions.ts"
+
     ]
 }
