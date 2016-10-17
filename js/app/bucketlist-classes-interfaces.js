@@ -20,8 +20,9 @@ var bucketlist;
     bucketlist.Task = Task;
     var ExploreTask = (function (_super) {
         __extends(ExploreTask, _super);
-        function ExploreTask(description, priority, assignedTo) {
+        function ExploreTask(exploreDate, description, priority, assignedTo) {
             _super.call(this, description, priority, assignedTo);
+            this.exploreDate = exploreDate;
             this.description = description;
             this.priority = priority;
             this.assignedTo = assignedTo;
@@ -31,8 +32,9 @@ var bucketlist;
     bucketlist.ExploreTask = ExploreTask;
     var MeetTask = (function (_super) {
         __extends(MeetTask, _super);
-        function MeetTask(description, priority, assignedTo) {
+        function MeetTask(meetDate, description, priority, assignedTo) {
             _super.call(this, description, priority);
+            this.meetDate = meetDate;
             this.description = description;
             this.priority = priority;
             this.assignedTo = assignedTo;

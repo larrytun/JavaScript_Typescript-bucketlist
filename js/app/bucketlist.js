@@ -17,8 +17,9 @@ var Task = (function () {
 }());
 var ExploreTask = (function (_super) {
     __extends(ExploreTask, _super);
-    function ExploreTask(description, priority, assignedTo) {
+    function ExploreTask(exploreDate, description, priority, assignedTo) {
         _super.call(this, description, priority, assignedTo);
+        this.exploreDate = exploreDate;
         this.description = description;
         this.priority = priority;
         this.assignedTo = assignedTo;
@@ -27,8 +28,9 @@ var ExploreTask = (function (_super) {
 }(Task));
 var MeetTask = (function (_super) {
     __extends(MeetTask, _super);
-    function MeetTask(description, priority, assignedTo) {
+    function MeetTask(meetDate, description, priority, assignedTo) {
         _super.call(this, description, priority);
+        this.meetDate = meetDate;
         this.description = description;
         this.priority = priority;
         this.assignedTo = assignedTo;
@@ -52,7 +54,7 @@ var ken = {
     email: "reddit.com"
 };
 var wanda = {
-    name: "wanda what",
+    name: "Wanda What",
     email: "ww.com"
 };
 var tasks = [];

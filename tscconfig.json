@@ -1,12 +1,12 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": false
-  }
+    "rootDir": "app",
+    "out": "build/js/app.js"
+  },
+  "files": [
+    "app/bucketlist-create-tasks.ts",
+    "app/bucketlist-classes-interfaces.ts",
+    "app/bucketlist-people.ts"
+    ]
 }

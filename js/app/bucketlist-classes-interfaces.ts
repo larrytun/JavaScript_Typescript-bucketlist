@@ -22,13 +22,13 @@ export class Task implements ITask {
 }
 
 export class ExploreTask extends Task {
-  constructor(public description: string, public priority: string, public assignedTo?: IPerson){
+  constructor(public exploreDate: Date, public description: string, public priority: string, public assignedTo?: IPerson){
      super(description, priority, assignedTo);
    }
 }
 
 export class MeetTask extends Task {
-  constructor(public description: string, public priority: string, public assignedTo: IPerson){
+  constructor(public meetDate: Date, public description: string, public priority: string, public assignedTo: IPerson){
   super(description, priority);
   }
 }
