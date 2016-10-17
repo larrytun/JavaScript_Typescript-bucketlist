@@ -50,7 +50,7 @@ var ken: IPerson = {
 }
 
 var wanda: IPerson = {
-  name: "wanda what",
+  name: "Wanda What",
   email: "ww.com"
 }
 
@@ -67,7 +67,6 @@ tasks.push(new HobbyTask("Bake a pie."));
 
 var today = new Date();
 var tomorrow = today;
-
 tomorrow.setDate(today.getDate() + 1);
 var nextDay = today;
 nextDay.setDate(today.getDate() + 2);
